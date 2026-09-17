@@ -1,0 +1,81 @@
+:root {
+  --bg: #f6f5f0;
+  --surface: #ffffff;
+  --text: #2b2d33;
+  --muted: #6b6f7a;
+  --accent: #2f6f8f;
+  --accent-hover: #1f5270;
+  --border: #e2e0d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.site-nav a:hover {
+  background: var(--bg);
+  color: var(--accent);
+}
+
+.site-nav a.active {
+  color: var(--accent);
+  background: rgba(47, 111, 143, 0.1);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}

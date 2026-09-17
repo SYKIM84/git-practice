@@ -1,0 +1,12 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "홈" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+      - link "About" [ref=e5] [cursor=pointer]:
+        - /url: about.html
+      - link "Projects" [ref=e6] [cursor=pointer]:
+        - /url: projects.html
+  - main [ref=e7]:
+    - heading "안녕하세요" [level=1] [ref=e8]
+    - paragraph [ref=e9]: 메인 페이지입니다. 위 메뉴에서 다른 페이지로 이동할 수 있습니다.
